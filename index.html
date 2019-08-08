@@ -1,0 +1,43 @@
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Cerbero Memory</title>
+    <meta name="description" content="Juego de memoria Cerbero">
+    <meta name="author" content="JotaCé">
+
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body onload="newGame()">
+    <header>
+      <img height=50 width=50 src="images/logo.png" class="logo"/><h1>Cerbero Memory</h1>
+      <p>Descubre las parejas en el menor número de intentos posible.</p>
+      <div class="scoreboard">
+        <span class="cell heading">Intentos</span><span class="cell heading">Faltan</span>
+        <span id="moves" class="cell">0</span><span id="pairs" class="cell">10</span>
+      </div>
+    </header>
+    <section>
+      <span class="tile" onclick="reveal(this)"></span>
+      <span class="tile" onclick="reveal(this)"></span>
+      <span class="tile" onclick="reveal(this)"></span>
+      <span class="tile" onclick="reveal(this)"></span>
+      <span class="tile" onclick="reveal(this)"></span>
+      <span class="tile" onclick="reveal(this)"></span>
+      <span class="tile" onclick="reveal(this)"></span>
+      <span class="tile" onclick="reveal(this)"></span>
+      <span class="tile" onclick="reveal(this)"></span>
+      <span class="tile" onclick="reveal(this)"></span>
+      <span class="tile" onclick="reveal(this)"></span>
+      <span class="tile" onclick="reveal(this)"></span>
+      <span class="tile" onclick="reveal(this)"></span>
+      <span class="tile" onclick="reveal(this)"></span>
+      <span class="tile" onclick="reveal(this)"></span>
+      <span class="tile" onclick="reveal(this)"></span>
+      <span class="tile" onclick="reveal(this)"></span>
+      <span class="tile" onclick="reveal(this)"></span>
+      <span class="tile" onclick="reveal(this)"></span>
+      <span class="tile" onclick="reveal(this)"></span>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+body {
+  font: 2em Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 120%;
+}
+
+p {
+  text-align: center;
+  margin: 3vh;
+  font-size: 80%;
+}
+
+.scoreboard {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1vh;
+  display: grid;
+  min-height: 12vh;
+  width: 80vh;
+  grid-template: 50% 50% / 25% 25%
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 70%;
+}
+
+.heading {
+  background-color: blue;
+  color: whitesmoke;
+}
+
+section {
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  height: 64vh;
+  width: 80vh;
+  grid-column-gap: 2vh;
+  grid-row-gap: 2vh;
+  grid-template: repeat(4, 25%) / repeat(5, 20%);
+}
+
+.logo {
+  float: left;
+}
+
+.tile {
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.tile:hover {
+  border: 3px solid yellow;
+}
+
+.bg1 { background-image: url("images/01.png"); }
+.bg2 { background-image: url("images/02.jpg"); }
+.bg3 { background-image: url("images/03.jpg"); }
+.bg4 { background-image: url("images/04.jpg"); }
+.bg5 { background-image: url("images/05.jpg"); }
+.bg6 { background-image: url("images/06.jpg"); }
+.bg7 { background-image: url("images/07.jpg"); }
+.bg8 { background-image: url("images/08.jpg"); }
+.bg9 { background-image: url("images/09.png"); }
+.bg0 { background-image: url("images/10.JPG"); }
+.off { 
+  background-image: none;
+  background-color: brown; 
+}
+.solved {
+  border: 3px solid goldenrod;
+  background-color: gold;
+}
