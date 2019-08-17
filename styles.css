@@ -28,7 +28,7 @@ p {
   grid-template: 50% 50% / 25% 25%
 }
 
-.cell {º
+.cell {
   display: flex;
   align-items: center;
   justify-content: center;
