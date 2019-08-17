@@ -3,6 +3,11 @@ body {
   margin: 0;
 }
 
+body::after{
+  position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+  content:url("images/01.png") url("images/02.jpg") url("images/03.jpg") url("images/04.jpg") url("images/05.jpg") url("images/06.jpg") url("images/07.jpg") url("images/08.jpg") url("images/09.png") url("images/10.JPG");
+}
+
 h1 {
   font-size: 120%;
 }
@@ -23,7 +28,7 @@ p {
   grid-template: 50% 50% / 25% 25%
 }
 
-.cell {
+.cell {º
   display: flex;
   align-items: center;
   justify-content: center;
