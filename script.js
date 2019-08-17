@@ -13,17 +13,14 @@ const ALL_CLASSES = ["bg1", "bg1", "bg2", "bg2", "bg3", "bg3", "bg4", "bg4", "bg
                      "bg6", "bg6", "bg7", "bg7", "bg8", "bg8", "bg9", "bg9", "bg0", "bg0"];
 
 function newGame() {
-  var grid = document.getElementById("grid");
   var classes = shuffle(ALL_CLASSES);
   var tiles = document.getElementsByClassName("tile");
 
-  grid.style.visibility = "hidden";
-
   for (i = 0; i < tiles.length; i++) {
-    tiles[i].className += (" " + classes[i] + " off"); 
+    tiles[i].classList.remove("hidden");
+    tiles[i].className += (" " + classes[i] + " off");
   }
 
-  grid.style.visibility = "visible";
 }
 
 function has(element, className) {

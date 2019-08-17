@@ -8,6 +8,10 @@ section::before{
   content:url("images/01.png") url("images/02.jpg") url("images/03.jpg") url("images/04.jpg") url("images/05.jpg") url("images/06.jpg") url("images/07.jpg") url("images/08.jpg") url("images/09.png") url("images/10.JPG");
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 h1 {
   font-size: 120%;
 }
